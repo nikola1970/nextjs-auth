@@ -80,7 +80,7 @@ app.prepare()
             res.status(404).json({ error: "No token provided!" });
         });
 
-        // start the server!
+        // start the server
         server.use(handler).listen(3000);
     })
     .catch(ex => {
